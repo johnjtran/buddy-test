@@ -1,3 +1,10 @@
-.java-version
-.nrepl-history
-target
+/target
+/lib
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
