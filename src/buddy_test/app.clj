@@ -83,7 +83,7 @@
 
 (defroutes all-routes
   (context "/admin" []
-    (restrict admin-routes {:handler identity}))
+    (restrict admin-routes {:handler is-authenticated}))
   (GET "/" [] get-index)
   (GET "/login/" [] get-login)
   (POST "/login/" [] post-login)
